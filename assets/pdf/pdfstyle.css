@@ -1,0 +1,358 @@
+/* 
+HTML TAGS
+*/
+body,
+html {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 300;
+  line-height: 2rem;
+}
+
+header {
+  background-color: teal;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+main {
+  padding: 20px;
+}
+
+/* classes */
+
+.btn {
+  border: none;
+  background-color: #454747;
+  /* color: #fff; */
+  color: teal;
+  font-weight: 900;
+  padding: 10px 30px;
+  margin: 10px auto 15px auto;
+}
+.career-img {
+  object-fit: contain;
+  height: 300px;
+  width: 100%;
+}
+
+.close {
+  display: flex;
+  font-size: 32px;
+  font-weight: bolder;
+  justify-content: flex-end;
+}
+
+.contact-details {
+  /* Note to self, use this for further styling of detals*/
+}
+
+.contact-details--font {
+  font-size: 0.8rem;
+}
+
+.cv-font--lg {
+  font-size: 1.3rem;
+}
+
+.cv-margin-bottom--md {
+  margin-bottom: 25px;
+}
+
+.cv-margin-bottom--sm {
+  margin-bottom: 15px;
+}
+
+.cv-margin-top--sm {
+  margin-top: 15px;
+}
+
+.cv-margin-top--md {
+  margin-top: 25px;
+}
+
+.cv--underline {
+  border-bottom: 2px solid teal;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.modal-backdrop {
+  display: none;
+}
+
+.my-profile {
+  background-color: teal;
+  color: white;
+  display: none;
+  left: 0;
+  opacity: 0;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+}
+
+.next:hover {
+  transform: translateY(-3px);
+  transition: 0.5s;
+}
+
+.portfolio-project {
+  background-color: #454747;
+  border-radius: 100px;
+  color: #fff;
+  padding: 3px 10px;
+  margin: 10px;
+}
+
+.portfolio-project > a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.portfolio-project:hover {
+  background-color: #2b2c2c;
+  color: #fff;
+  font-size: 18px;
+  padding: 5px 12px;
+  transition: 0.2s;
+}
+
+.profile-image {
+  height: 250px;
+  width: 250px;
+  margin-bottom: 20px;
+}
+
+.cv-projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.text-align--center {
+  text-align: center;
+}
+
+.toggle-view {
+  display: block;
+  animation: fadeInFromNone 1s ease-in-out;
+  opacity: 1;
+}
+
+.ul__list-style--inside {
+  list-style: inside;
+}
+
+.ul__list-style--square {
+  list-style: inside square;
+}
+
+.ul__padding--sides {
+  padding: 0 20px;
+}
+
+.view-profile {
+  animation: grow ease-in-out 5s;
+  border-bottom: 2px dashed #fff;
+  color: #fff;
+}
+
+@keyframes grow {
+  0% {
+    border-bottom: 2px dashed #50c4e7;
+    color: #50c4e7;
+    font-size: 18px;
+  }
+  25% {
+    border-bottom: 2px dashed #fff;
+    color: #fff;
+    font-size: 15px;
+  }
+  50% {
+    border-bottom: 2px dashed #fff;
+    color: #fff;
+    font-size: 18px;
+  }
+  100% {
+    border-bottom: 2px dashed #50c4e7;
+    color: #50c4e7;
+  }
+}
+
+@keyframes fadeInFromNone {
+  0% {
+    display: none;
+    left: -10;
+    opacity: 0;
+  }
+
+  1% {
+    display: block;
+    left: -10;
+    opacity: 0;
+  }
+
+  100% {
+    display: block;
+    left: 13;
+    opacity: 1;
+  }
+}
+
+/* IDs */
+
+#modalBackdrop {
+  background-color: hsla(0, 0%, 0%, 0.69);
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  display: none;
+}
+
+#next,
+#next-bottom {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: teal;
+  color: white;
+  font-weight: 900;
+}
+#profile-pic {
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  object-fit: cover;
+}
+
+/* MEDIA QUERRIES */
+@media only screen and (min-width: 900px) {
+  /* 
+HTML TAGS
+*/
+
+  header {
+    background-color: teal;
+    color: white;
+    height: 200px;
+    padding: 70px;
+    position: relative;
+    text-align: left;
+  }
+
+  main {
+    position: relative;
+    padding: 20px 20px 20px 70px;
+  }
+
+  /* 
+CLASSES
+*/
+
+  .about-me {
+    max-width: 600px;
+  }
+
+  .about-me-heading {
+    font-size: 2rem;
+    padding: 30px;
+  }
+
+  .close {
+    display: none;
+  }
+
+  .cv-font--lg {
+    font-size: 2rem;
+  }
+
+  .my-profile {
+    background-color: #454747;
+    display: block;
+    left: 700px;
+    min-height: 90vh;
+    opacity: 1;
+    padding: 20px 30px 70px 30px;
+    position: absolute;
+    right: 30px;
+    top: 45px;
+    width: 350px;
+    z-index: 3;
+  }
+
+  .cv--underline {
+    border-bottom: 2px solid teal;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
+
+  .cv-wrapper {
+    padding: 30px 0 60px 0;
+  }
+
+  .display-none {
+    display: none;
+  }
+
+  .header--underline-white {
+    border-bottom: 2px solid white;
+  }
+
+  .link--decoration {
+    text-decoration: none;
+    border-bottom: 1px solid lightgreen;
+  }
+
+  .link--decoration:hover {
+    cursor: pointer;
+    font-size: 1rem;
+    color: lightgreen;
+  }
+
+  .paper {
+    margin: auto;
+  }
+  .paper--max-width {
+    max-width: 1100px;
+  }
+
+  .profile-image {
+    height: 250px;
+    width: 250px;
+  }
+
+  .shadow {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  }
+
+  .stack {
+    background-color: white;
+    color: #454747;
+    padding-left: 10px;
+  }
+
+  .view-profile {
+    display: none;
+  }
+
+  /* IDS */
+
+  #modalBackdrop {
+    display: none;
+  }
+
+  #profile-pic {
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 100%;
+    object-fit: cover;
+  }
+}
+
+/* @media only screen and (max-width: 340px){
+.my-profile {
+    transform: translate(-13%, -5%);
+}
+} */
